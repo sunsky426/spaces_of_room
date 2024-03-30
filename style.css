@@ -1,0 +1,46 @@
+.fullscreen-image {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.point {
+  position: absolute;
+  width: 20px;
+  /* Adjust based on your design */
+  height: 20px;
+  /* Adjust based on your design */
+  background-color: red;
+  /* Style your points */
+  border-radius: 50%;
+  /* Makes the points circular */
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  white-space: pre-line;
+  /* Ensure the tooltip respects line breaks */
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  /* Adjust as needed to position the tooltip correctly */
+}
+
+/* .point:hover::after {
+  content: attr(data-text);
+  content: replace(replace(attr(data-text), '|', '\A'), '; ', '\A\A');
+  white-space: pre;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+} */

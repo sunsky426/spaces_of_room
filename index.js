@@ -38,27 +38,3 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
 });
-
-function adjustPoints() {
-    // Assuming the image fills the window - replace these with your image's actual dimensions if different
-    const imageWidth = window.innerWidth;
-    const imageHeight = window.innerHeight;
-  
-    const points = document.querySelectorAll('.point');
-    points.forEach(point => {
-      const xPercent = parseFloat(point.getAttribute('data-x-percent'));
-      const yPercent = parseFloat(point.getAttribute('data-y-percent'));
-  
-      // Calculate new positions as a percentage of the current window size
-      const xPosition = imageWidth * (xPercent / 100);
-      const yPosition = imageHeight * (yPercent / 100);
-  
-      // Update point positions
-      point.style.left = `${xPosition}px`;
-      point.style.top = `${yPosition}px`;
-    });
-  }
-  
-  // Adjust points on window load and resize
-  window.addEventListener('load', adjustPoints);
-  window.addEventListener('resize', adjustPoints);

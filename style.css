@@ -22,13 +22,14 @@
 
 .tooltip {
   position: absolute;
-  white-space: pre-line;
-  /* Ensure the tooltip respects line breaks */
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
   padding: 5px;
   border-radius: 5px;
-  /* Adjust as needed to position the tooltip correctly */
+  border: 1px solid #ddd;
+  width: auto; /* Adjust the width based on content */
+  max-width: 300px; /* Prevents the tooltip from becoming too wide */
+  white-space: nowrap; /* Ensures the text stays on one line until it reaches max-width */
 }
 
 /* .point:hover::after {
